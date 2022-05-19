@@ -2,18 +2,18 @@
 
 ## Description
 
-SatServer, together with [SatController](https://github.com/ea7kir/SatController), will be a system for controlling and Digital Amateur Television (DATV) equipment over a wired local area network.
+SatServer, together with [SatController](https://github.com/ea7kir/SatController) and [SatCReceiver](https://github.com/ea7kir/SatReceiver), will be a system for controlling and Digital Amateur Television (DATV) equipment over a wired local area network.
 
 ## Platform
 
 - Raspberry Pi 4 (mine has 8 GB of memory)
 - Raspberry Pi OS Lite Arm 64 (Bullseye)
-- Swift 5.5
+- Swift 5.6
 
 
 ## Implementation
 
-Both Controller and Server are written in Swift, with Swift-NIO for the networking.  The server runs as a service on the latest 64-bit version of Raspberry Pi OS Lite.  The controller is a desktop application with a SwiftUI user interface on an Apple iMac.  Transmitted audio & video is sourced internally from the Mac version of OBS. Received audio & video can be monitored with VNC on the iMac or an Apple TV and HDMI television. All other equipment (transmitter, power amplifier, receiver, power supplies, peripherals and ancillaries) are situated outdoors - weather protected and close to the antennas.
+The Controller Server and Receive are written in Swift, with Swift-NIO for the networking.  The server and receiver run as a service on the latest 64-bit version of Raspberry Pi OS Lite.  The controller is a desktop application with a SwiftUI user interface on an Apple iMac.  Transmitted audio & video is sourced internally from the Mac version of OBS. Received audio & video can be monitored with VNC on the iMac or an Apple TV and HDMI television. All other equipment (transmitter, power amplifier, receiver, power supplies, peripherals and ancillaries) are situated outdoors - weather protected and close to the antennas.
 
 ## Supported Devices
 
@@ -25,17 +25,9 @@ Both Controller and Server are written in Swift, with Swift-NIO for the networki
 - BATC Advanced Receiver
 - Etc, etc.
 
-NOTE: Hardware.swift contains more information, includng which Pi pin numbers are used.
-
 ## Current Status
 
-- Fetching the status is taking to long for the response handler.
-- Raspberry Pi interupts (used to measure fan speed) maybe causing segmention errors.
-- Need to implement better and more concurrency.
-
-**THIS IS WORK IN PROGRESS AND SOME HARDWARE HAS NOT BEEN BUILT OR TESTED**
-
-NOTE: Returned data will be diplayed as question marks or random numbers when hardware devices are not connected.
+**THIS IS WORK IN PROGRESS, SO NO SOURCE CODE YET**
 
 ## Futher Reading
 
@@ -44,10 +36,9 @@ NOTE: Returned data will be diplayed as question marks or random numbers when ha
 
 ## Acknowledgements
 
-- Swift-Arm [swift-arm.com)](https://swift-arm.com)
-- Swift-NIO [github.com/apple/swift-nio](https://github.com/apple/swift-nio)
-- SwiftyGPIO [github.com/uraimo/SwiftyGPIO](https://github.com/uraimo/SwiftyGPIO)
-- Swift Community [swift.org](https://swift.org)
+- Members of the BATC [batc.org.uk](https://batc.org.uk)
+- Members of AMSAT-DL [batc.org.uk](https://amsat-dl.org/en/)
+- Swift Community [amsat-dl.org](https://swift.org)
 
 ## License
 
