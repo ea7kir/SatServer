@@ -2,7 +2,7 @@
 
 ## Description
 
-SatServer, together with [SatController](https://github.com/ea7kir/SatController) and [SatCReceiver](https://github.com/ea7kir/SatReceiver), will be a system for controlling and Digital Amateur Television (DATV) equipment over a wired local area network.
+SatServer, together with [SatController](https://github.com/ea7kir/SatController) and [SatCReceiver](https://github.com/ea7kir/SatReceiver), is a system for controlling and Digital Amateur Television (DATV) equipment over a wired local area network.
 
 ## Platform
 
