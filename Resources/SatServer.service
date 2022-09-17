@@ -1,0 +1,19 @@
+[Unit]
+Description=EA7KIR SatServer service
+#After=multi-user.target
+
+[Service]
+User=pisat
+
+WorkingDirectory=/home/pisat
+
+ExecStart=/home/pisat/SatServer/.build/debug/SatServer
+
+#SuccessExitStatus=143
+#TimeoutStopSec=10
+#Restart=on-failure
+#RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
