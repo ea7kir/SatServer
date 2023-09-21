@@ -1,6 +1,6 @@
 # SatServer
 
-**This project is Archived. Further development is unlikely.**
+**THIS PROJECT IS ARCHIVED - FURTHER DEVELOPMENT IS UNLIKELY**
 
 ## Description
 
